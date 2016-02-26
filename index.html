@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+	<html>
+		<head>
+			<title>Korepetycje</title>
+			<link rel="stylesheet" type="text/css" href="style.css" />
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+			<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+			<script src="js/dist/snap.svg-min.js"></script>
+			<script src="http://localhost:8000/socket.io/socket.io.js"></script>
+			<script src="client.js"></script>
+		</head>
+		<body>
+			<div id="start">
+				<div id="choose">
+					<button id="create" type="button" class="easing">Stwórz</button>
+					<button id="join" type="button"  class="easing">Dołącz</button></br></br>
+				</div>
+				<div id="enter_room">
+					<span style="color: #fff; margin-top:100px;">Wpisz kod pokoju</span></br>
+					<input id='pokoj' type='text'></input><button id='enter' type='button'>Wejdź</button></br>
+				</div>
+			</div>
+			<div id="room">
+				<div id="list_cont">
+					<ul id="list">
+					</ul>
+				</div>
+				<svg id="kartka" width="1024" height="600"  class="easing"></svg>
+				<div id="tools">
+					
+				</div>
+			</div>
+		</body>
+	</html>
